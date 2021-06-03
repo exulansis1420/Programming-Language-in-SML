@@ -4,11 +4,11 @@ This is a simple programming language in SML which supports arithmetic, function
 
 # Instructions
 
-Refer to the following procedure to run an input. Setup is required to be done only once. Use ```src/sample-input``` to test sample code and syntax reference.
+Refer to the following procedure to run an input. Setup is required to be done only once. Use ```src/sample-input``` and ```description.pdf``` for syntax rules reference.
 ## Setup
 1) Use command ```ml-lex calc.lex```
 2) Use command ```ml-yacc calc.yacc```
 
 ## Usage
-1) Enter input in text file ```f``` (refer to ```description.pdf``` for syntax rules).
+1) Enter input in text file ```f```.
 2) Run using ```sml loader.sml```
