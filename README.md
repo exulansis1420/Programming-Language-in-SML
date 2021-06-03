@@ -10,5 +10,5 @@ Refer to the following procedure to run an input. Setup is required to be done o
 2) Use command ```ml-yacc calc.yacc```
 
 ## Usage
-1) Enter input in text file ```f```.
+1) Enter input in text file ```f```
 2) Run using ```sml loader.sml```
