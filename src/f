@@ -1,0 +1,53 @@
+fun addthree (x:int):int->int->int => fn(y:int):int->int => fn(z:int):int->int => x PLUS y PLUS z;
+let 
+	val f = fn(x:int):int->int => fn(y:int):int => x MINUS y TIMES y
+	in ((f 45) 2)
+end;
+let 
+	val f = fn(x:int):int->int->int => fn(y:int):int->int => fn(z:int):int->int => x TIMES y TIMES z
+	in (((f 9) 2) 7)
+end;
+(((addthree 9) 5) 6);
+fun addone (y:int):int => y PLUS 1;
+(addone 5);
+let 
+	val f = fn(h:int->int): int=> (h 4) TIMES 2
+in
+    let
+        val g = fn(x:int): int=>x TIMES x
+	in
+        (f g) PLUS 6
+    end
+end;
+let val x=2 in x PLUS 2 end;
+let 
+	val f = fn(h:int): int=> 7 PLUS (h TIMES 4) 
+in
+    let
+        val g = fn(x:int): int=>x TIMES x
+	in 
+        12 TIMES (f (g 3))
+    end
+end;
+fun mulbytwo (z:int):int => z TIMES 2;
+if 3 GREATERTHAN 2 
+	then let val X = TRUE in
+		FALSE EQUALS TRUE 
+		end
+	else TRUE
+fi;
+let val X = 1 in 
+	if X EQUALS 2 then 3 else 4 fi
+end ;
+let val x=2 in x PLUS 2 end;
+fun func (f:int->int):int => (f 5) ;
+let 
+	val f = fn(x:int): int=>x PLUS 7
+in
+	(func f)
+end;
+(mulbytwo 5) PLUS (addone (mulbytwo 10));
+fun fact(n:int):int => if n EQUALS 0 then 1 else (fact n MINUS 1) TIMES n fi;
+(fact 5);
+3 MINUS 2 PLUS 3 TIMES 2;
+
